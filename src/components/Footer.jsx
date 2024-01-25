@@ -9,7 +9,8 @@ const Footer = () => {
 
       <div className='footer-container'>
         <p>
-          © 2023 <strong>Adrian Hajdin</strong>. All rights reserved.
+          <Link to='https://github.com/cmHuang777/3D_portfolio'><strong>Source Code</strong></Link><br className='sm:block hidden' />
+          Website template from JSMastery
         </p>
 
         <div className='flex gap-3 justify-center items-center'>

@@ -15,15 +15,14 @@ const About = () => {
         Hello, I'm{" "}
         <span className='blue-gradient_text font-semibold drop-shadow'>
           {" "}
-          Adrian
+          Chao Ming
         </span>{" "}
         👋
       </h1>
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in Croatia, specializing in technical
-          education through hands-on learning and building applications.
+          Year 2 Computer Science student at National University of Singapore, interested in Machine Learning and Software Engineering.
         </p>
       </div>
 
@@ -47,7 +46,7 @@ const About = () => {
       </div>
 
       <div className='py-16'>
-        <h3 className='subhead-text'>Work Experience.</h3>
+        <h3 className='subhead-text'>Work Experience</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
             I've worked with all sorts of companies, leveling up my skills and
@@ -62,15 +61,15 @@ const About = () => {
                 key={experience.company_name}
                 date={experience.date}
                 iconStyle={{ background: experience.iconBg }}
-                icon={
-                  <div className='flex justify-center items-center w-full h-full'>
-                    <img
-                      src={experience.icon}
-                      alt={experience.company_name}
-                      className='w-[60%] h-[60%] object-contain'
-                    />
-                  </div>
-                }
+                // icon={
+                //   <div className='flex justify-center items-center w-full h-full'>
+                //     <img
+                //       src={experience.icon}
+                //       alt={experience.company_name}
+                //       className='w-[60%] h-[60%] object-contain'
+                //     />
+                //   </div>
+                // }
                 contentStyle={{
                   borderBottom: "8px",
                   borderStyle: "solid",
@@ -104,6 +103,15 @@ const About = () => {
             ))}
           </VerticalTimeline>
         </div>
+      </div>
+      <div className='py-10 flex flex-col'>
+        <h3 className='subhead-text'>Others</h3>
+        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+          <p>
+            Outside of work, I enjoy playing badminton, table tennis and going to the gym. I also enjoy reading manga! If you like these sports too, feel free to contact me and we can find some time to play together!
+          </p>
+        </div>
+        
       </div>
 
       <hr className='border-slate-200' />

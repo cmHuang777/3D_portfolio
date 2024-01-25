@@ -5,9 +5,11 @@ import {
     css,
     estate,
     express,
+    firebase,
     git,
     github,
     html,
+    java,
     javascript,
     linkedin,
     mongodb,
@@ -16,6 +18,8 @@ import {
     nextjs,
     nodejs,
     pricewise,
+    python,
+    pytorch,
     react,
     redux,
     sass,
@@ -27,6 +31,31 @@ import {
 } from "../assets/icons";
 
 export const skills = [
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Backend",
+    },
+    {
+        imageUrl: java,
+        name: "Java",
+        type: "Backend",
+    },
+    {
+        imageUrl: javascript,
+        name: "JavaScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: html,
+        name: "HTML",
+        type: "Frontend",
+    },
     {
         imageUrl: css,
         name: "CSS",
@@ -48,30 +77,25 @@ export const skills = [
         type: "Version Control",
     },
     {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
         imageUrl: mongodb,
         name: "MongoDB",
         type: "Database",
     },
     {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
+        imageUrl: firebase,
+        name: "Firebase",
+        type: "Database",
     },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
+    // {
+    //     imageUrl: motion,
+    //     name: "Motion",
+    //     type: "Animation",
+    // },
+    // {
+    //     imageUrl: mui,
+    //     name: "Material-UI",
+    //     type: "Frontend",
+    // },
     {
         imageUrl: nextjs,
         name: "Next.js",
@@ -87,79 +111,50 @@ export const skills = [
         name: "React",
         type: "Frontend",
     },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
+    // {
+    //     imageUrl: redux,
+    //     name: "Redux",
+    //     type: "State Management",
+    // },
+    // {
+    //     imageUrl: sass,
+    //     name: "Sass",
+    //     type: "Frontend",
+    // },
     {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
         type: "Frontend",
-    },
+    }, 
     {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
+        imageUrl: pytorch,
+        name: "PyTorch",
+        type: "Machine Learning",
     }
+    
 ];
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Intern",
+        company_name: "Transforma Robotics",
+        //icon: starbucks,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "April 2022 - June 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed an application utilising Unity and the ros-sharp library to enable remote control of arms and baskets on a Haulotte boom lift. This enhanced functionality allowed for efficient and precise operations.",
+            "Contributed to the production of electrical and hardware components for a painting robot, resulting in a remarkable 20% increase in overall efficiency.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Teaching Assistant",
+        company_name: "NUS",
+        icon: null,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "August 2023 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Conducted weekly lessons for a 30-student class in CS2040 Data Structures and Algorithm Lab.",
+            " Provided one-on-one support during lab sessions to help students work through challenges with implementing common data structures and analysing time/space complexities of algorithm.",
         ],
     },
 ];
@@ -173,12 +168,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/cmhuang777',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/chao-ming-huang/',
     }
 ];
 
@@ -186,43 +181,43 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'GetUrSpace',
+        description: 'A full-stack facility booking application with separate administrator and user interface. Administrator can customise facilities for users to book, with real time update on bookings.',
+        link: 'https://github.com/Team-Hack-Wizard/GetUrSpace',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'Chatbot Genos',
+        description: 'A to-do-list CLI tool that allows users to create, read, update and delete tasks. Tasks are stored in a local database.',
+        link: 'https://github.com/cmHuang777/ip',
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'MediLink Contacts',
+        description: 'An address book CLI tool to help clinic staff store and manage patients’ details efficiently. It has many functions such as searching, undoing, and creating appointments between doctors and patients.',
+        link: 'https://github.com/AY2324S1-CS2103T-T09-3/tp',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'Stock price prediction',
+        description: 'This is a project from Fintech Society where we used machine learning to predict stock prices. We used a Long Short-Term Memory (LSTM) model and ARIMA model to predict the stock price of Nvidia.',
+        link: 'https://github.com/cmHuang777/Fintech-Project-1',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Sentiment Classification',
+        description: 'This is a project form Fintech Society where we used NLP techniques to classify sentiments of a labelled dataset. I used Navie Bayes and DistilBERT model for this project and manged to achieve 0.81 accuracy rate using the DistilBERT model.',
+        link: 'https://github.com/cmHuang777/Fintech-Project-2',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        name: 'OOOLarm',
+        description: 'This is an alarm clock app that was built in NUS hackathon HackNRoll 2024. It is an annoying alram that only stops when the user finishes a set of tasks.',
+        link: 'https://github.com/tanyyyming/HackNRoll',
     }
 ];

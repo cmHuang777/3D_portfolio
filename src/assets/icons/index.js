@@ -26,6 +26,10 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import python from './python.svg'
+import java from './java.svg'
+import firebase from './firebase.svg'
+import pytorch from './pytorch.svg'
 
 export {
     css,
@@ -34,7 +38,10 @@ export {
     github,
     html,
     javascript,
+    java,
+    python,
     mongodb,
+    firebase,
     motion,
     mui,
     nextjs,
@@ -49,6 +56,7 @@ export {
     car,
     estate,
     pricewise,
+    pytorch,
     snapgram,
     summiz,
     threads,
